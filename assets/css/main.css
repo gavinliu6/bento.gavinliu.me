@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Satoshi", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --text-md: 0.9375rem;
+}
+
+:root {
+  --app-header-height: 5.5rem;
+
+  --container-max-width: 100rem;
+
+  @media (max-width: 1279px) {
+    --app-header-height: 5rem;
+  }
+
+  @media (max-width: 639px) {
+    --app-header-height: 4rem;
+  }
+}
+
+body {
+  @apply antialiased bg-orange-50/65 text-neutral-900;
+}

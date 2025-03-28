@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@primevue/nuxt-module',
     '@vueuse/nuxt',
+    'nuxt-umami',
   ],
   components: [
     {
@@ -54,5 +55,12 @@ export default defineNuxtConfig({
     components: {
       exclude: ['Form', 'FormField', 'Editor', 'Chart'],
     },
+  },
+  umami: {
+    id: '400e9ddb-301a-435b-b2f2-7baa18bd7b5b',
+    host: 'https://cloud.umami.is',
+    autoTrack: true,
+    domains: ['gavinliu.me'],
+    ignoreLocalhost: true,
   },
 })

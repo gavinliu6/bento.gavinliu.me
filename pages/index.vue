@@ -78,6 +78,19 @@ const { width } = useWindowSize({ initialWidth: 0 })
                   >
                     I'm a software engineer and a lifelong learner. And I'm passionate about web development, open source, and creative design.
                   </p>
+                  <p
+                    class="
+                      mt-6 text-lg
+                      xl:mt-8 xl:text-xl
+                    "
+                  >
+                    I write my blog and take notes <NuxtLink
+                      to="https://gavinliu.me"
+                      external
+                      target="_blank"
+                      class="underline"
+                    >here</NuxtLink>.
+                  </p>
                 </div>
               </div>
             </div>
@@ -138,6 +151,7 @@ const { width } = useWindowSize({ initialWidth: 0 })
                         class="
                           flex size-10 flex-shrink-0 items-center justify-center
                           rounded-lg bg-[#FF2442]
+                          shadow-[0_1px_2px_rgba(0,0,0,.125)]
                         "
                       >
                         <img
@@ -179,6 +193,7 @@ const { width } = useWindowSize({ initialWidth: 0 })
                         class="
                           flex size-10 flex-shrink-0 items-center justify-center
                           rounded-lg bg-[#1D9BF0] text-white
+                          shadow-[0_1px_2px_rgba(0,0,0,.125)]
                         "
                       >
                         <IconTwitter />
@@ -218,6 +233,7 @@ const { width } = useWindowSize({ initialWidth: 0 })
                           class="
                             flex size-10 flex-shrink-0 items-center
                             justify-center rounded-lg bg-neutral-900
+                            shadow-[0_1px_2px_rgba(0,0,0,.125)]
                           "
                         >
                           <img
@@ -261,6 +277,7 @@ const { width } = useWindowSize({ initialWidth: 0 })
                         class="
                           flex size-10 flex-shrink-0 items-center justify-center
                           rounded-lg bg-neutral-900 text-white
+                          shadow-[0_1px_2px_rgba(0,0,0,.125)]
                         "
                       >
                         <svg
@@ -328,6 +345,9 @@ const { width } = useWindowSize({ initialWidth: 0 })
                     </div>
                   </div>
                 </div>
+
+                <!-- My products -->
+                <MyProducts />
 
                 <!-- My favorite movies & TV series -->
                 <MyFavoriteMoviesAndTvSeries />
